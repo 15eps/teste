@@ -61,3 +61,4 @@ navigator.getBattery().then((battery) => {
     batteryIsCharging = battery.charging;
   });
 });
+
