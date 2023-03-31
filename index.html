@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>    
+    <main>
+      <header>
+        <h1>Encontrar sua 
+        <br>sensibilidade
+        <br>Não é a coisa mais 
+        <br>difícil do mundo!
+        </h1>
+      </header>
+      <div id="dpi"></div>
+      <section>
+        <div>
+          <h2>Sua sensibilidade atual</h2>
+          <span>Preencha todos os campos para calcular a sua nova sensi</span>
+        </div>
+
+        <div>
+          <h1 class="message"></h1>
+        </div>
+
+        <form>
+          <div>
+            <label for="">A mira está passando da cabeça?</label>
+            <input type="radio" value="true"/>
+            <label>SIM</label>
+            <input type="radio" value="false"/>
+            <label>Não</label>
+          </div>
+          <div>
+            <label for="">Geral</label>
+            <input type="range" placeholder=""/>
+            <span>0</span>
+          </div>
+          <div>
+            <label for="">red dot</label>
+            <input type="range" value="100" placeholder=""/>
+            <span>0</span>
+          </div>
+
+          <div>
+            <label for="">2x</label>
+            <input type="range" value="100" placeholder=""/>
+            <span>0</span>
+          </div>
+
+          <div>
+            <label for="">4x</label>
+            <input type="range" value="100" placeholder=""/>
+            <span>0</span>
+          </div>
+          <button type='button'>Gerar nova sensi</button>
+        </form>
+
+       
+      </section>
+    </main>
+  </body>
+</html>
