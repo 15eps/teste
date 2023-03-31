@@ -17,6 +17,7 @@ function changeMessage() {
   rangeValues[0].value && (showMessage.innerHTML = `dpi_y ${dpi_y}, dpy_x ${dpi_x}, scren W ${screen.width}, H ${screen.height}`);
 }
 
+
 changeMessage();
 
 rangeValues.forEach((rangeValue, index) => {
