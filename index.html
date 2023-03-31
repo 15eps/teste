@@ -2,65 +2,81 @@
 <html lang="en">
   <head>
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-  <body>    
-    <main>
-      <header>
-        <h1>Encontrar sua 
-        <br>sensibilidade
-        <br>Não é a coisa mais 
-        <br>difícil do mundo!
-        </h1>
-      </header>
-      <div id="dpi"></div>
+  <body>
+    <header>
+      <h1>
+        Encontrar sua SENSIBILIDADE
+        <span>Não é tão DIFÍCIL assim!</span>
+      </h1>
+      <a class="btn" href="#sensi" id="unblockButton">Encontrar minha sensi</a>
+    </header>
+    <main id="sensi" hidden>
       <section>
         <div>
           <h2>Sua sensibilidade atual</h2>
-          <span>Preencha todos os campos para calcular a sua nova sensi</span>
-        </div>
-
-        <div>
-          <h1 class="message"></h1>
+          <p>
+            Preencha todos os campos para calcular a sua nova
+            <strong>SENSIBILIDADE</strong>. Sempre leve em consideração sua
+            <strong>DPI</strong> atual que é: <span id="current-dpi"></span>
+          </p>
         </div>
 
         <form>
           <div>
-            <label for="">A mira está passando da cabeça?</label>
-            <input type="radio" value="true"/>
+            <span class="text">A mira está passando da cabeça?</span>
+            <input type="radio" value="true" />
             <label>SIM</label>
-            <input type="radio" value="false"/>
+            <input type="radio" value="false" />
             <label>Não</label>
           </div>
           <div>
+            <span class="text">A mira está tremendo?</span>
+            <input type="radio" value="true" />
+            <label>SIM</label>
+            <input type="radio" value="false" />
+            <label>NÃO</label>
+          </div>
+          <div>
             <label for="">Geral</label>
-            <input type="range" placeholder=""/>
+            <input type="range" placeholder="" />
             <span>0</span>
           </div>
           <div>
             <label for="">red dot</label>
-            <input type="range" value="100" placeholder=""/>
+            <input type="range" value="100" placeholder="" />
             <span>0</span>
           </div>
 
           <div>
             <label for="">2x</label>
-            <input type="range" value="100" placeholder=""/>
+            <input type="range" value="100" placeholder="" />
             <span>0</span>
           </div>
 
           <div>
             <label for="">4x</label>
-            <input type="range" value="100" placeholder=""/>
+            <input type="range" value="100" placeholder="" />
             <span>0</span>
           </div>
-          <button type='button'>Gerar nova sensi</button>
-        </form>
 
-       
+          <div>
+            <label for="">AWM</label>
+            <input type="range" value="100" placeholder="" />
+            <span>0</span>
+          </div>
+          <button class="btn dark" type="button">Gerar nova sensi</button>
+        </form>
       </section>
     </main>
   </body>
