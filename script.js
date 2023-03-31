@@ -5,7 +5,7 @@ const currentDPI = document.getElementById('current-dpi');
 const sensiInputs = document.querySelectorAll('input[type=range]');
 const questionInput = document.querySelectorAll('.question input[checked]');
 const sensiInputsValues = document.querySelectorAll('.sensi-value');
-
+const batteryStatus = document.getElementById('battery');
 window.onload = () => {
   currentDPI.textContent = screen.width - 1;
   handleInputValue();
@@ -51,10 +51,13 @@ let batteryIsCharging = false;
 
 navigator.getBattery().then((battery) => {
   batteryIsCharging = battery.charging;
-
+  batteryStatus.innerHTML = `
+    ${battery.level}
+   tempo carregando ${battery.level}
+    carregando ${battery.charging}
+  `;
+  console.log(battery);
   battery.addEventListener('chargingchange', () => {
     batteryIsCharging = battery.charging;
   });
 });
-
-alert(batteryIsCharging);
