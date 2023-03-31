@@ -5,8 +5,9 @@
 }
 body {
   max-width: 525px;
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Sora', sans-serif;
+  background-color: #111111;
   color: #1b1b1b;
 }
 header {
@@ -46,6 +47,7 @@ header h1 span {
 }
 
 main {
+  background-color: #f1f1f1;
   min-height: 100vh;
 }
 
