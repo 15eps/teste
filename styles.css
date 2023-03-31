@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  max-width: 525px;
   margin: 0;
   font-family: 'Sora', sans-serif;
   color: #1b1b1b;
