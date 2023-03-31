@@ -53,7 +53,7 @@ navigator.getBattery().then((battery) => {
   batteryIsCharging = battery.charging;
   batteryStatus.innerHTML = `
     ${battery.level}
-   tempo carregando ${battery.level}
+   tempo carregando ${battery.chargingTime}
     carregando ${battery.charging}
   `;
   console.log(battery);
