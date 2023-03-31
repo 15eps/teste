@@ -33,18 +33,18 @@
         </div>
 
         <form>
-          <div>
+          <div class="question">
             <span class="text">A mira está passando da cabeça?</span>
-            <input type="radio" value="true" />
+            <input type="radio" value="true" name="head" checked />
             <label>SIM</label>
-            <input type="radio" value="false" />
+            <input type="radio" name="head" value="false" />
             <label>Não</label>
           </div>
-          <div>
+          <div class="question">
             <span class="text">A mira está tremendo?</span>
-            <input type="radio" value="true" />
+            <input type="radio" name="passed" checked value="true" />
             <label>SIM</label>
-            <input type="radio" value="false" />
+            <input type="radio" name="passed" value="false" />
             <label>NÃO</label>
           </div>
           <div>
@@ -75,7 +75,9 @@
             <input type="range" value="100" placeholder="" />
             <span class="sensi-value">0</span>
           </div>
-          <button class="btn dark" type="button">Gerar nova sensi</button>
+          <button id="submit" class="btn dark" type="button">
+            Gerar nova sensi
+          </button>
         </form>
       </section>
     </main>
