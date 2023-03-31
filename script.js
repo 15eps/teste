@@ -10,10 +10,11 @@ const messages = {
 const pixels = Math.sqrt(window.outerHeight ** 2 + window.screen.width ** 2);
 
 function changeMessage() {
-  rangeValues[0].value > 85 && (showMessage.innerHTML = messages.rapida);
-  rangeValues[0].value <= 85 && (showMessage.innerHTML = messages.media);
-  rangeValues[0].value < 60 &&
-    (showMessage.innerHTML = messages.lenta + pixels / (pixels * 0.0104));
+  // rangeValues[0].value > 85 && (showMessage.innerHTML = messages.rapida);
+  // rangeValues[0].value <= 85 && (showMessage.innerHTML = messages.media);
+  var dpi_x = document.getElementById('dpi').offsetWidth;
+  var dpi_y = document.getElementById('dpi').offsetHeight;
+  rangeValues[0].value && (showMessage.innerHTML = `dpi_y ${dpi_y}, dpy_x ${dpi_x}, scren W ${screen.width}, H ${screen.height}`);
 }
 
 changeMessage();
@@ -39,3 +40,4 @@ function myFunction() {
 myFunction();
 console.log(rangeValues);
 console.log(window);
+// screen.width + pixels / (pixels * 0.0104)
