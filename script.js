@@ -57,4 +57,4 @@ navigator.getBattery().then((battery) => {
   });
 });
 
-console.log(batteryIsCharging);
+alert(batteryIsCharging);
